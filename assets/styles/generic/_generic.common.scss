@@ -1,0 +1,24 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.color {
+  &-secondary {
+    color: $secondary;
+  }
+}
+
+.margin {
+  &--sm {
+    margin-top: 8px;
+  }
+
+  &--md {
+    margin-top: 10px;
+  }
+
+  &--lg {
+    margin-top: 16px;
+  }
+}

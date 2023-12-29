@@ -1,0 +1,9 @@
+
+body {
+  @include full-width(block);
+  @include font(14px, 20px, $primary, 400);
+
+  background: $gray;
+  font-family: $fontGlobal;
+  -webkit-tap-highlight-color: transparent;
+}

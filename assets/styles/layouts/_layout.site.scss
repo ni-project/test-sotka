@@ -1,0 +1,32 @@
+
+:root{ --swiper-navigation-size: 24px }
+
+.container {
+  @include full-width(flex);
+
+  flex-direction: column;
+  row-gap: 24px;
+  max-width: 1184px;
+  margin: 0 auto;
+  padding: 32px 0;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 1250px) {
+  .container {
+    max-width: 100%;
+    padding: 32px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    padding: 24px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    padding: 24px 0;
+  }
+}
