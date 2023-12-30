@@ -1152,17 +1152,16 @@ strong {
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 6px; }
-    .card__tags-bottom {
-      flex-direction: column; }
-      .card__tags-bottom .tag--button {
-        display: none; }
     .card__tags-wrapper {
-      display: flex;
+      display: inline-flex;
       align-items: flex-start;
       justify-content: flex-start;
       flex-wrap: wrap;
-      gap: 6px;
-      transition: 0.3s; }
+      gap: 6px; }
+    .card__tags .tag--button {
+      display: none; }
+    .card__tags.active .tag--button {
+      display: flex; }
   .card__controls {
     display: flex;
     flex-direction: column;
@@ -1207,12 +1206,7 @@ strong {
     .card__plots-info {
       flex: 1; }
     .card__plots-cost span {
-      display: none; }
-    .card__tags-wrapper {
-      max-height: 24px;
-      overflow: hidden; }
-    .card__tags-bottom .tag--button {
-      display: block; } }
+      display: none; } }
 .tag {
   font-size: 14px;
   font-weight: 400;

@@ -161,21 +161,22 @@
     flex-wrap: wrap;
     gap: 6px;
 
-    &-bottom {
-      flex-direction: column;
-
-      .tag--button {
-        display: none;
-      }
-    }
-
     &-wrapper {
-      display: flex;
+      display: inline-flex;
       align-items: flex-start;
       justify-content: flex-start;
       flex-wrap: wrap;
       gap: 6px;
-      transition: 0.3s;
+    }
+
+    .tag--button {
+      display: none;
+    }
+
+    &.active {
+      .tag--button {
+        display: flex;
+      }
     }
   }
 
@@ -259,19 +260,6 @@
       &-cost {
         span {
           display: none;
-        }
-      }
-    }
-
-    &__tags {
-      &-wrapper {
-        max-height: 24px;
-        overflow: hidden;
-      }
-
-      &-bottom {
-        .tag--button {
-          display: block;
         }
       }
     }
